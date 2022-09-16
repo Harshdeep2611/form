@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD101-Capstone</title>
+    <style>
+      input{
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 5px;
+
+      }
+      label{
+        color: #B4886B;
+        font-weight: bold;
+        display: block;
+        width: 150px;
+        float: left;
+        margin: 5px;
+      }
+      th{
+        margin: 0px;
+        padding-left: 20px;
+      }
+      td,tr{
+        padding-left: 35px;
+      }
+    </style>
+
+</head>
+<body>
+    <form class="regis-form" >
+        <h1>Registration Form</h1>
+        <div>
+            <label for="name" >Name :</label>
+            <input type="text" name="name" id="name"  required>
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email"  required>
+        </div>
+        <div>
+            <label for="password">Password :</label>
+            <input type="password" name="pass" id="password" >
+        </div>
+        <div>
+            <label for="dob">Date of birth :</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="dob">Accept Terms :</label>
+            <input type="checkbox" name="accepted_terms" id="accepted_terms" >
+        </div>
+        <div>
+            <button id="submitButton" type="submit" >Submit</button>
+        </div>
+
+        
+    </form>
+        <table>
+            <thead><tr><th>Name</th><th>Email</th><th>Password</th><th>Dob</th><th>Accepted terms?</th></tr></thead>
+            <tbody id="table_body">
+            </tbody>
+        </table>
+        <script src="script.js"></script>
+
+</body>
+</html>
